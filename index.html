@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Team</title>
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="main-header header">
+		<nav class="navbar">
+		</nav>
+		<div class="banner">
+			<h1>Cupcake</h1>
+			<p>Gallery</p>
+		</div>
+	</header>
+	<div class="container-main slide">
+		<div class="inner-content">
+			<div class="center">
+			  <div class="cont"><img src="./imgs/delai1.jpg"></div>
+			  <div class="cont"><img src="./imgs/delai2.jpg"></div>
+			  <div class="cont"><img src="./imgs/delai3.jpg"></div>
+			  <div class="cont"><img src="./imgs/delai4.jpg"></div>
+			  <div class="cont"><img src="./imgs/delai5.jpg"></div>
+			  <div class="cont"><img src="./imgs/delai6.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container-main first">
+		<div class="inner-content">
+			<div class="mid" data-aos="fade-up" data-aos-anchor-placement="top-center">
+				<div class="holder"><img src="./imgs/delai7.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="fade-up" data-aos-anchor-placement="top-center">
+				<div class="holder"><img src="./imgs/delai8.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="200">
+				<div class="holder"><img src="./imgs/delai9.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="300">
+				<div class="holder"><img src="./imgs/delai10.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-right"data-aos-anchor-placement="top-center" data-aos-delay="200">
+				<div class="holder"><img src="./imgs/delai11.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-delay="300">
+				<div class="holder"><img src="./imgs/delai12.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-delay="200">
+				<div class="holder"><img src="./imgs/delai13.jpg"></div>
+			</div>
+
+			<div class="mid" data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-delay="300">
+				<div class="holder"><img src="./imgs/delai14.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-main">
+		<div class="inner-content mid-col3">
+			<div class="mid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai15.jpg"></div>
+			</div>
+			<div class="mid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai18.jpg"></div>
+			</div>
+			<div class="mid" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai19.jpg"></div>
+			</div>	
+			<div class="mid" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai16.jpg"></div>
+			</div>
+			<div class="mid" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai17.jpg"></div>
+			</div>
+			<div class="mid" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+				<div class="holder"><img src="./imgs/delai20.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- End of CDN -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
+	<script>
+		$('.center').slick({
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
+		  responsive: [
+		    {
+		      breakpoint: 769,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 601,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
+		});
+	</script>
+</body>
+</html>
